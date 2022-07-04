@@ -1,0 +1,1 @@
+print((lambda a:int(a[0])/int(a[1]))(input().split()))
