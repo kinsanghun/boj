@@ -1,9 +1,6 @@
 function solution(s) {
     var answer = "";
-    var slice = s.split(" ")
-    slice.map(d => {
-        string = d.toLowerCase();
-        answer += " " + string.charAt(0).toUpperCase() + string.slice(1);
-    })
+    s.split(" ").map(d => answer += " " + d.charAt(0).toUpperCase() + d.slice(1).toLowerCase() )
+    
     return answer.slice(1);
 }
